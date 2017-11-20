@@ -8,7 +8,7 @@ echo '{"presets": ["env","react"]}' > .babelrc
 cat <<EOF > index.js
 import React from 'react'
 import ReactDOM from 'react-dom'
-ReactDOM.render(<p>Hello, !</p>,document.getElementById('root'))
+ReactDOM.render(<p>Hello, $1!</p>,document.getElementById('root'))
 EOF
 cat <<EOF > webpack.config.js
 module.exports = {
